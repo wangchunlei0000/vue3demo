@@ -18,8 +18,13 @@ export default {
       toInject: "this is provide component data",
     };
   },
-  provide: {
-    toInjectMsg: "toInjectMsg---",
+  // provide: {
+  //   toInjectMsg: "toInjectMsg---",
+  // },
+  provide() {
+    return {
+      toInjectMsg: this.toInject,
+    };
   },
   methods: {},
   computed: {},

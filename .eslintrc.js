@@ -3,11 +3,11 @@ module.exports = {
     env: {
         node: true
     },
-    extends: [
-        'plugin:vue/essential',
-        //关闭ESlint关键代码
-        // '@vue/standard'
-    ],
+    // extends: [
+    //     'plugin:vue/essential',
+    //     //关闭ESlint关键代码
+    //     // '@vue/standard'
+    // ],
     parserOptions: {
         parser: 'babel-eslint'
     },
