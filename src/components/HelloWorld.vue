@@ -1,9 +1,6 @@
 <template>
   <div class="hello">
-    <div class="img-wrapper" v-for="(item, index) in test" :key="index">
-      <img class="imgs" :src="result[index]" alt="" />
-      <!-- <img class="imgs" :src="getPicUrl(item)" alt="" /> -->
-    </div>
+    test page
   </div>
 </template>
 

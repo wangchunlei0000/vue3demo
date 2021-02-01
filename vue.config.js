@@ -1,3 +1,4 @@
+// 相当于 webpack.config.js
 module.exports = {
   lintOnSave: false,
   devServer: {
