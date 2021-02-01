@@ -1,17 +1,26 @@
-import { createRouter, createWebHistory } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
-const routerHistory = createWebHistory()
-// createWebHashHistory hash 路由
-// createWebHistory history 路由
-// createMemoryHistory 带缓存 history 路由
-const routers = createRouter({
-  history: routerHistory,
-  routes: [
-    {
-      path: '/helloworld',
-      component: HelloWorld
-    },
-  ]
-})
+import Provide from './components/provide.vue'
+import {createRouter,createWebHashHistory} from 'vue-router'
 
-export default routers
+const routes = [
+  {
+    path: '/helloworld',
+    name: 'helloworld',
+    component: HelloWorld
+  },
+  {
+    path: '/provide',
+    name: '/provide',
+    component: Provide
+  }
+]
+
+
+let router = createRouter({
+   // url 地址的转发规则
+  history: createWebHashHistory(),
+  // 在routes 中配置路由规则
+  routes,
+  
+});
+export default router;

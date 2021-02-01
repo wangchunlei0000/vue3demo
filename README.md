@@ -44,6 +44,4 @@ main.js ->
 
 import 新建的 router.js
 
-let app = createApp(App)
-app.use(router)
-app.mount('#app')
+createApp(App).use(router).mount('#app')
